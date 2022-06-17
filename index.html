@@ -24,7 +24,7 @@
       canvas.onmousemove = (e) => {
         if (painting === true) {
           ctx.beginPath();
-          ctx.arx(e.clientX, e.clientY, 150, 0, 2 * Math.PI);
+          ctx.arc(e.clientX, e.clientY, 10, 0, 2 * Math.PI);
           ctx.stroke();
           ctx.fill();
         } else {
